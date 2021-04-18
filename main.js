@@ -7,9 +7,9 @@ const monthTemps = [
 
     [56, 72, 42, 33, 53, 23, 33],
 
-    [54, 23, 42, 44, 96, 23, 58],
+    [54, 103, 42, 77, 96, 63, 58],
 
-    [56, 78, 32, 32, 56, 43, 18],
+    [56, 78, 32, 102, 56, 43, 18],
 ]
 
 weekTemps = []
@@ -45,5 +45,5 @@ console.log(`The hottest week this month was the ${weekOfTheMonth[week]}`)
 
 for (let temps of monthTemps) {
     let day = temps.indexOf(highestTemp(temps))
-    console.log(`The hottest day for week ${monthTemps.indexOf(temps) + 1} was ${weekdays[day]} with a high of ${highestTemp(temps)} `)
+    console.log(`The hottest day for week ${monthTemps.indexOf(temps) + 1} was ${weekdays[day]} with a high of ${highestTemp(temps)} degrees`)
 }
